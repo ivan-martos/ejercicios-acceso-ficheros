@@ -12,7 +12,7 @@ import ejercicio14.Persona;
 public class LeerFichObject {
     public static void main(String[] args) {
 
-        String fichero = "Objetos.txt";
+        String fichero = "Objetos33.txt";
         File f = new File(fichero);
 
         if (!f.exists()) {
@@ -37,7 +37,7 @@ public class LeerFichObject {
                 Persona p = (Persona) ois.readObject();
                 System.out.println(p);              
             }
-            //con bandera boolean para  prescindire de while(true)
+            //con bandera boolean para  prescindire de while(true) // esto no es una buena practica por que no deja de ser un while(true)
             /*boolean finArchivo = false;
             
             while (!finArchivo) {
